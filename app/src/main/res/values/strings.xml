@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AfterwordsApp</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verify">Verify</string>
+    <string name="return_to_login">Return to Login</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="check_in_frequency">Check-In Frequency</string>
+    <string name="_2_minutes">2 Minutes</string>
+    <string name="_1_week_7_days">1 Week (7 Days)</string>
+    <string name="_1_month_30_days">1 Month (30 Days)</string>
+    <string name="_1_year_365_days">1 Year (365 Days)</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log In</string>
+    <string name="search_card">Search Card</string>
+    <string name="card_to_search_for">Card To Search For</string>
+    <string name="search_card_button">Search Card</string>
+    <string name="add_card">Add Card</string>
+    <string name="card_to_add">Card To Add</string>
+    <string name="add_card_button">Add Card</string>
+    <string name="logged_in_as">"Logged In As: "</string>
+    <string name="log_in_btn">Log In</string>
+    <string name="register_btn">Register</string>
+    <string name="password_txt">Password</string>
+    <string name="username_txt">Username</string>
+</resources>

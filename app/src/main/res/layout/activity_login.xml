@@ -1,0 +1,53 @@
+<!-- app/src/main/res/layout/activity_login.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:autofillHints="Layout"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_txt"
+        android:minHeight="48dp"
+        tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="Edit Password Text"
+        android:hint="@string/password_txt"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:text="@string/log_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:text="@string/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:textColor="#FF0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
