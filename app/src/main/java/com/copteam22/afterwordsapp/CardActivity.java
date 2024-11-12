@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -101,6 +102,8 @@ public class CardActivity extends AppCompatActivity {
         call.enqueue(new Callback<SearchCardsResponse>() {
             @Override
             public void onResponse(Call<SearchCardsResponse> call, Response<SearchCardsResponse> response) {
+                Log.d("FadeMove", "onResponse called");
+
                 if(response.isSuccessful()){
                     SearchCardsResponse searchCardsResponse = response.body();
                     if(searchCardsResponse != null){

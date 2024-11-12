@@ -1,23 +1,45 @@
-// app/src/main/java/com/copteam22/afterwordsapp/models/LoginResponse.java
+// src/main/java/com/copteam22/afterwordsapp/models/LoginResponse.java
+
 package com.copteam22.afterwordsapp.models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class LoginResponse {
+    @SerializedName("id")
     private int id;
+
+    @SerializedName("firstName")
     private String firstName;
+
+    @SerializedName("lastName")
     private String lastName;
-    private boolean Verified;
+
+    @SerializedName("username")
+    private String username;
+
+    @SerializedName("email")
+    private String email;
+
+    @SerializedName("checkInFreq")
+    private int checkInFreq;
+
+    @SerializedName("verified")
+    private boolean verified;
+
+    @SerializedName("deceased")
+    private boolean deceased;
+
+    @SerializedName("createdAt")
+    private String createdAt;
+
+    @SerializedName("lastLogin")
+    private String lastLogin;
+
+    @SerializedName("error")
     private String error;
 
-    // Constructor
-    public LoginResponse(int id, String firstName, String lastName, boolean verified, String error) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.Verified = verified;
-        this.error = error;
-    }
+    // Getters and Setters for all fields
 
-    // Getter and Setter for id
     public int getId() {
         return id;
     }
@@ -26,7 +48,6 @@ public class LoginResponse {
         this.id = id;
     }
 
-    // Getter and Setter for firstName
     public String getFirstName() {
         return firstName;
     }
@@ -35,7 +56,6 @@ public class LoginResponse {
         this.firstName = firstName;
     }
 
-    // Getter and Setter for lastName
     public String getLastName() {
         return lastName;
     }
@@ -44,16 +64,62 @@ public class LoginResponse {
         this.lastName = lastName;
     }
 
-    // Getter and Setter for Verified
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getCheckInFreq() {
+        return checkInFreq;
+    }
+
+    public void setCheckInFreq(int checkInFreq) {
+        this.checkInFreq = checkInFreq;
+    }
+
     public boolean isVerified() {
-        return Verified;
+        return verified;
     }
 
     public void setVerified(boolean verified) {
-        this.Verified = verified;
+        this.verified = verified;
     }
 
-    // Getter and Setter for error
+    public boolean isDeceased() {
+        return deceased;
+    }
+
+    public void setDeceased(boolean deceased) {
+        this.deceased = deceased;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public String getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(String lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
     public String getError() {
         return error;
     }
