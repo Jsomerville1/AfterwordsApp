@@ -34,7 +34,7 @@ import retrofit2.Response;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText editTextUsername, editTextPassword;
-    private Button buttonLogin;
+    private Button buttonLogin, buttonRegister;
     private TextView textViewRegister;
     private ApiService apiService;
     private SharedPrefManager sharedPrefManager;
@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
-        textViewRegister = findViewById(R.id.textViewRegister); // Ensure this ID exists
+        buttonRegister = findViewById(R.id.buttonRegister);
 
         // Initialize Retrofit and SharedPrefManager
         apiService = RetrofitClient.getClient("http://161.35.116.218:5000").create(ApiService.class);
@@ -61,6 +61,13 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+        // Set OnClickListener for buttonRegister
+        buttonRegister.setOnClickListener(v -> {
+            Log.d("FadeMove", "Register Button clicked");
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        });
 
         // Set up login button click listener
         buttonLogin.setOnClickListener(v -> {
@@ -148,12 +155,6 @@ public class LoginActivity extends AppCompatActivity {
             });
         });
 
-        // Set up register text click listener
-        textViewRegister.setOnClickListener(v -> {
-            Log.d("FadeMove", "Register TextView clicked");
 
-            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-            startActivity(intent);
-        });
     }
 }
